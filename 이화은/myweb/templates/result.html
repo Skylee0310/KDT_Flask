@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myweb</title>
+    <link href = "{{url_for('static', filename = 'mystyle.css')}}" rel="stylesheet">
+</head>
+<body>
+    <center>
+        <h1>🍏 음식물 쓰레기와 일반 쓰레기 분류 🍏</h1>
+    </center>
+    <center>
+        <form action = '{{action}}' method="{{method}}" enctype="multipart/form-data">
+            <fieldset>
+                <label><h2> Q. 이 과일은 어떻게 버려야 할까요?</h2></label>
+                <img src="{{ url_for('static', filename='uploads/' + filename) }}" style="max-width: 20%; height: auto;" alt="uploaded image"><br><br>
+            <p>
+                <h4>{{result}}</h4>
+            </p>
+        </fieldset>
+        </form>
+    </center>
+</body>
+</html>
