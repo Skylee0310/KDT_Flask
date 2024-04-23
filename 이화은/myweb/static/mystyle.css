@@ -1,0 +1,33 @@
+body {
+    /* 배경 이미지 설정 */
+    background-image: url('bg.png'); /* 이미지 파일 경로 */
+    background-size: cover;
+    background-repeat: no-repeat;}
+
+
+h1{margin-top: 150px;
+    color:rgb(50, 135, 50)}
+
+.submit-button {
+    /* 버튼의 크기와 여백 설정 */
+    width: 315px; /* 이미지 최대 너비 */
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px; /* 내부 여백 */
+    margin: 30px;
+    border: none; /* 테두리 없음 */
+    cursor: pointer; /* 마우스 호버 시 커서 모양 변경 */
+    background-image: url('button.png'); /* 이미지 파일 경로 */
+    background-size: cover; /* 이미지를 버튼에 꽉 차게 조정 */
+    background-position: center; /* 이미지를 가운데 정렬 */
+    background-repeat: no-repeat; /* 이미지 반복 없음 */
+    /* 원하는 배경 색상 설정 (이미지가 로드되지 않았거나 버튼이 채워지지 않는 부분을 위한 색상) */
+    background-color: transparent; /* 배경 색상 투명으로 설정 */
+}
+
+fieldset {
+    width: 600px;
+    /* 투명한 검은색 배경 (RGBA 값의 마지막 값이 투명도) */
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 3px solid #16984c;
+    border-radius: 3px;}
